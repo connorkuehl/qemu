@@ -5305,7 +5305,7 @@ BlockDriverState *bdrv_lookup_bs(const char *device,
         }
     }
 
-    error_setg(errp, "Cannot find device=%s nor node_name=%s",
+    error_setg(errp, "Cannot find device=%s nor node-name=%s",
                      device ? device : "",
                      node_name ? node_name : "");
     return NULL;
